@@ -1,0 +1,9 @@
+name: Checks for issues
+on: [issues, workflow_dispatch]
+jobs: 
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output to console
+        run: echo "${{ github }}"
+  
